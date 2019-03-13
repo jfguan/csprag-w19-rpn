@@ -9,6 +9,7 @@ operators = {
     '*': operator.mul,
     '/': operator.truediv,
 
+    #'//': operator.floordiv,
     #'^': operator.pow,
     #'&': operator._and,
     #'|': operator._or,
