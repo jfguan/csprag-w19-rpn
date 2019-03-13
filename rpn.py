@@ -1,18 +1,27 @@
 #!/usr/bin/env python3
 
 import operator
+import math
 
+def percentage(inputNum):
+    return math.factorial(inputNum)
+
+def factorial(inputNum):
+    return math.factorial(inputNum)
 
 operators = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
-    '//': operator.floordiv,
-    '^': operator.pow,
+
+    #'%': percentage,
+    #'^': operator.pow,
+    #'//': operator.floordiv,
+    #'!': fatorial,
     #'&': operator._and,
     #'|': operator._or,
-    #'_': operator.invert,
+    #'~': operator.invert,
 }
 
 def calculate(myarg):
