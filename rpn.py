@@ -2,12 +2,16 @@
 
 import operator
 import math
+from inspect import signature
 
-def percentage(inputNum):
+def percentage(inputNum, percentChange):
+    return inputNum*(1 + percentChange/100)
+
+def factorial(inputNum, garbage):
     return math.factorial(inputNum)
 
-def factorial(inputNum):
-    return math.factorial(inputNum)
+def bitNot(inputNum, garbage):
+    return ~inputNum
 
 operators = {
     '+': operator.add,
@@ -15,13 +19,13 @@ operators = {
     '*': operator.mul,
     '/': operator.truediv,
 
-    #'%': percentage,
-    #'^': operator.pow,
-    #'//': operator.floordiv,
-    #'!': fatorial,
-    #'&': operator._and,
-    #'|': operator._or,
-    #'~': operator.invert,
+    '%': percentage,
+    '^': operator.pow,
+    '//': operator.floordiv,
+    '!': factorial,
+    '&': operator.and_,
+    '|': operator.or_,
+    '~': bitNot
 }
 
 def calculate(myarg):

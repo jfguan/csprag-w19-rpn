@@ -30,13 +30,13 @@ class TestBasics(unittest.TestCase):
         self.assertEqual(120, result)
     def test_bitAnd(self):
         result = rpn.calculate("3 2 &")
-        self.assertEqual(0, result)
+        self.assertEqual(2, result)
     def test_bitOr(self):
         result = rpn.calculate("4 2 |")
-        self.assertEqual(4, result)
+        self.assertEqual(6, result)
     def test_bitNot(self):
         result = rpn.calculate("5 0 ~")
-        self.assertEqual(-5, result)
+        self.assertEqual(-6, result)
 
 if __name__ == '__main__':
     unittest.main()
