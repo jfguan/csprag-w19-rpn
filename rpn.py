@@ -8,9 +8,8 @@ operators = {
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
-
-    #'//': operator.floordiv,
-    #'^': operator.pow,
+    '//': operator.floordiv,
+    '^': operator.pow,
     #'&': operator._and,
     #'|': operator._or,
     #'_': operator.invert,
